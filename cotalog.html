@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МебельДом</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <img src="image/logo-cropped (2).svg" alt="Логотип" class="logo">
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li><a href="/info.html">О нас</a></li>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a class="active" href="/cotalog.html">Каталог</a></li>
+            </ul>
+        </nav>
+        <a href="" class="btn cart-btn">
+            Корзина
+            <span class="cart-count">0</span> 
+        </a>
+    </div>
+</header>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./image/Slider1.jpg" alt="слайд 1 "></div>
+        <div class="swiper-slide"><img src="./image/Slider2.jpg" alt="слайд 2 "></div>
+        <div class="swiper-slide"><img src="./image/Slider3.png" alt="слайд 3 "></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Новая секция с популярными категориями -->
+<section class="categories">
+    <div class="container">
+        <h2>Популярные категории</h2>
+        <ul class="categories__lists">
+            <li>
+                <div class="category_up"> 
+                    <a class="category__info" href="#">
+                        <div class="category__img">
+                            <img src="/image/divan.jpg" alt="Диваны">
+                        </div>
+                        <p class="category__name">Диваны</p>
+                    </a>       
+                </div>
+            </li>
+            <li>
+                <div class="category_up">
+                    <a class="category__info" href="#">
+                        <div class="category__img">
+                            <img src="/image/stenka.jpg" alt="Стенки">
+                        </div>
+                        <p class="category__name">Стенки</p>
+                    </a>            
+                </div>
+            </li>
+        </ul>
+<br>
+            <ul class="categories__list">
+                <li>
+                    <div class="category">
+                        <a class="category__info" href="#">
+                            <div class="category__img img">
+                                <img src="/image/shkaf.jpg" alt="Шкафы">
+                            </div>
+                            <p class="category__name">Шкафы</p>
+                        </a>    
+                    </div>
+                </li>
+                <li>
+                    <div class="category">
+                        <a class="category__info" href="#">
+                            <div class="category__img img">
+                                <img src="/image/bed.jpg" alt="Кровати">
+                            </div>
+                            <p class="category__name">Кровати</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="category">
+                        <a class="category__info" href="#">
+                            <div class="category__img img">
+                                <img src="/image/table.jpg" alt="Столы">
+                            </div>
+                            <p class="category__name">Столы</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="category">
+                        <a class="category__info" href="#">
+                            <div class="category__img">
+                                <img src="/image/tumba.jpg" alt="Тумбы">
+                            </div>
+                            <p class="category__name">Тумбы</p>
+                         </a>
+                    </div>
+                </li>
+            </ul>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Магазин "МебельДом". Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 0,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+</body>
+</html>
